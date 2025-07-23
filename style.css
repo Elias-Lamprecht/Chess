@@ -1,0 +1,68 @@
+body {
+  background-color: rgba(78, 18, 128);
+}
+
+#Back-Button-Wrapper {
+  border: white solid 3px;
+  width: min-content;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#Back-Button {
+  color: white;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#CordsText {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#Controls-Wrapper {
+  margin-top: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#chessboard-wrapper {
+  display: grid;
+  width: fit-content;
+  grid-template-columns: repeat(var(--board-size, 8), 50px);
+  grid-template-rows: repeat(var(--board-size, 8), 50px);
+}
+
+.chess-square {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.piece {
+  font-size: 32px;
+  cursor: grab;
+  user-select: none;
+  color: purple;
+}
+
+.coord-label {
+  position: absolute;
+  font-size: 12px;
+  color: purple;
+  top: 2px;
+  left: 4px;
+  pointer-events: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.CheckboxText {
+  color: white;
+}
+
+.legal-move-highlight {
+  outline: 3px solid limegreen;
+  outline-offset: -2px;
+}

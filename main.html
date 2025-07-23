@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chess</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="Back-Button-Wrapper">
+    <a href="../main.html" id="Back-Button">Back</a>
+  </div>
+
+  <ul id="Controls-Wrapper">
+    <a id="CordsText">Show Cords:</a>
+    <input type="checkbox" id="CordsCheckbox">
+    <input type="number" id="SizeInput" value="8" min="8">
+    <button onclick="CreateChessboard()">Create Chessboard</button>
+    <button onclick="DestroyChessboard(chessboard_wrapper)">Destroy Chessboard</button>
+  </ul>
+
+  <div id="chessboard-wrapper"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
